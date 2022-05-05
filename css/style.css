@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1{
+    color: white;
+    font-family: var(--font1);
+    font-size: 8em;
+    font-variant: small-caps;
+}
+
+header h3{
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+header h3 a:hover{
+    text-decoration: underline;
+}
+
+span{
+    display: block;
+    font-family: var(--font2);
+    font-size: 3.5vw;
+    line-height: 2.0;
+}
+
+.versionOne, .versionTwo, .versionThree, .versionFour, .versionFive{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.versionOne div, .versionTwo div, .versionThree div, .versionFour div, .versionFive div{
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+
+.versionTwo{
+    background-image: url("../imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.versionTwo div{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+div.stretch{
+    margin: initial;
+}
+
+.versionThree .stretch:first-child, .versionFive .stretch:first-child{
+    margin-bottom: 70px;
+}
+
+.versionFour{
+    background-image: url("../imagens/background002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.versionFour div{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.431);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 747px){
+    header{
+        height: 200px;
+    }
+
+    header h1{
+       font-size: 6em; 
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    footer{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    header h1{
+        font-size: 4em; 
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}
